@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+    <style>
+        body{
+            background-color:aquamarine
+            font: "Arial";
+            color: black;
+         
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <h2>Você Nasceu em Qual País?</h2>  <input type="string" name="txt01" id="txt01">
+    <input type="button" value="Gerar" id="buttom" onclick="calcular()">
+
+    <div id="result"></div>
+    
+
+    <script>
+        function calcular() {
+        var n1 = document.getElementById('txt01')
+        var nr = document.getElementById('result')
+        var na = String(n1.value)
+        var nb = String(na.value)
+            nr.innerHTML = `Você Nasceu no ${na}, sendo assim, `
+        if (nb == "Brasil") {
+            nr.innerHTML += `você é Brasileiro!`
+        } else {
+            nr.innerText += `você não é Brasileiro`
+        }
+
+        }
+    </script>
+    
+    
+ 
+</body>
+</html>

@@ -19,11 +19,11 @@
     <div id="res">Resultado!</div>
     <script>
         function somar() {
-            var tn1 = window.document.getElementById('txtn1')
+            var tn1 = window.document.getElementById('txtn1') //variavel do txtn1 será chamada aqui por tn1
             var tn2 = window.document.getElementById('txtn2')
             var result = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
+            var n1 = Number(tn1.value) //n1 é o valor de tn1
+            var n2 = Number(tn2.value) //n2 é o valor do campo tn2
             var s = n1 + n2
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>` 
         }
