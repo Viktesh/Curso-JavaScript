@@ -16,8 +16,9 @@
 </head>
 <body>
     <h1>Teste de Nacionalidade</h1>
-    <h2>Você Nasceu em Qual País?</h2>  <input type="string" name="txt01" id="txt01">
-    <input type="button" value="Gerar" id="buttom" onclick="calcular()">
+    <h2>Você Nasceu em Qual País?</h2>  
+    <input type="string" name="txt01" id="txt01">
+    <input type="button" value="Gerar" id="button" onclick="calcular()">
 
     <div id="result"></div>
     
@@ -27,10 +28,9 @@
         var n1 = document.getElementById('txt01')
         var nr = document.getElementById('result')
         var na = String(n1.value)
-        var nb = String(na.value)
-            nr.innerHTML = `Você Nasceu no ${na}, sendo assim, `
-        if (nb == "Brasil") {
-            nr.innerHTML += `você é Brasileiro!`
+        nr.innerText = `Você Nasceu no ${na}, sendo assim, `
+        if (na == "Brasil") {
+            nr.innerText += `você é Brasileiro!`
         } else {
             nr.innerText += `você não é Brasileiro`
         }
